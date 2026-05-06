@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Home Page</title>
+    </head>
+    <body>
+        <h1>This is a Page Heading from HTML </h1>
+        <p>This is a Paragraph 1 from HTML</p>
+        <div id="root">
+
+        </div>
+        <div id="main">
+
+        </div>
+    </body>
+
+    <script>
+        var h1=document.createElement("h1");
+        h1.textContent="This is a Heading created from JS";
+        var p=document.createElement("p");
+        p.textContent = "This is a paragraph created from JS";
+
+        var root = document.getElementById("root");
+        root.appendChild(h1);
+        root.appendChild(p);
+    </script>
+    
+</html>
